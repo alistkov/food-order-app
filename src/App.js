@@ -1,7 +1,12 @@
+import React from 'react';
+import Header from './components/Layout/Header/Header';
+
 const App = () => {
   return (
-    <div>React App</div>
-  )
+    <React.Fragment>
+      <Header />
+    </React.Fragment>
+  );
 };
 
 export default App;

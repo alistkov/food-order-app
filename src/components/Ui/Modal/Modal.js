@@ -9,7 +9,7 @@ const Backdrop = ({ onClose }) => {
 const ModalOverlay = ({ children }) => {
   return (
     <div className={classes.modal}>
-      <div className={classes.content}>{children}</div>
+      <div>{children}</div>
     </div>
   );
 };

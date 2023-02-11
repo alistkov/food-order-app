@@ -10,9 +10,13 @@ const Cart = ({ onCloseCart }) => {
   const totalAmount = `$${context.totalAmount.toFixed(2)}`;
   const hasItems = context.items.length > 0;
 
-  const cartItemRemoveHandler = (id) => {};
+  const cartItemRemoveHandler = (id) => {
+    context.removeItem(id);
+  };
 
-  const cartItemAddHandler = (item) => {};
+  const cartItemAddHandler = (item) => {
+    context.addItem({ ...item, amount: 1 });
+  };
 
   const cartItems = context.items.map((item) => (
     <CartItem
